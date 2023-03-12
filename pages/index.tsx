@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import Header from './components/Header'
 import Faq from './components/Faq'
 import Flow from './components/Flow'
+import Footer from './components/Footer'
 import Improvement from './components/Improvement'
 import Reason from './components/Reason'
 import Support from './components/Support'
@@ -18,12 +20,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="max-w-5xl mx-auto px-2">
+        <Header />
         <Reason />
         <Support />
         <Improvement />
         <Voice />
         <Faq />
         <Flow />
+        <Footer />
       </main>
     </>
   )

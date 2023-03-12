@@ -15,4 +15,15 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('daisyui'),
   ],
+  //to turn off the daisyui's darkmode by default 
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
 }
