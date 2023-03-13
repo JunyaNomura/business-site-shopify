@@ -1,5 +1,6 @@
-import { Navbar, Button,Dropdown } from "flowbite-react";
-import { useState, useEffect } from 'react'
+import { Navbar, Button, Dropdown } from "flowbite-react";
+import { useState, useEffect } from 'react';
+import Link from 'next/link'
 
 //navbar's scrolling animation
 const useScrollDirection = () =>  {
@@ -33,7 +34,7 @@ const Header2 = () => {
   return (
     <div>
       <Navbar
-        className={`${ scrollDirection === 'down' ? "animate-upAnime" : "animate-downAnime"} w-full bg-gray-300 z-50 transition-all duration-500 fixed`}
+        className={`${ scrollDirection === 'down' ? "animate-upAnime" : "animate-downAnime"} w-full bg-green-200 z-50 transition-all duration-500 fixed`}
         fluid={true}
         rounded={true}
       >
@@ -65,15 +66,8 @@ const Header2 = () => {
           </Navbar.Link>
           <Navbar.Link href="/navbars">
             Services
-            <div className="dropdown">
-              <button className="dropbtn">Dropdown</button>
-              <div className="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-            </div>
           </Navbar.Link>
+          
           <Navbar.Link href="/navbars">
             Pricing
           </Navbar.Link>
