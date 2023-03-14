@@ -1,5 +1,8 @@
-import Link from 'next/link';
-import { useState, useEffect } from 'react'
+import { Navbar, Button, Dropdown } from "flowbite-react";
+import { useState, useEffect } from 'react';
+import Link from 'next/link'
+import { RxHamburgerMenu } from 'react-icons/rx'
+import { VscClose } from 'react-icons/vsc'
 
 //navbar's scrolling animation
 const useScrollDirection = () =>  {
@@ -25,42 +28,111 @@ const useScrollDirection = () =>  {
   return scrollDirection;
 };
 
+
 const Header = () => {
 
-const scrollDirection = useScrollDirection();
+  const scrollDirection = useScrollDirection();
+
+  const [openMenu, setOpenMenu] = useState(false);
+    const menuFunction = () => {
+      setOpenMenu(!openMenu);
+  }
+
+  return (
+    <header className='fixed'>
+      <Navbar
+        className={`${ scrollDirection === 'down' ? "animate-upAnime" : "animate-downAnime"} bg-green-200 w-full z-50 transition-all duration-500 fixed`}
+        fluid={true}
+        rounded={true}
+      >
+      <Navbar.Brand href="https://flowbite.com/">
+      <img
+        src="https://flowbite.com/docs/images/logo.svg"
+        className="mr-3 h-6 sm:h-9"
+        alt="Flowbite Logo"
+      />
+      <span className="self-center whitespace-nowrap text-xl font-semibold">
+        Flowbite
+      </span>
+      </Navbar.Brand>
+      <div className="flex md:order-2">
+        <Button>
+          Get started
+        </Button>
+        <Navbar.Toggle />
+      </div>
+        <Navbar.Collapse >
+          <Navbar.Link
+            href="/navbars"
+            active={true}
+          >
+            Home
+          </Navbar.Link>
+          <Navbar.Link href="/navbars">
+            About
+          </Navbar.Link>
+          <Navbar.Link href="/navbars">
+            Services
+          </Navbar.Link>
+          
+          <Navbar.Link href="/navbars">
+            Pricing
+          </Navbar.Link>
+          <Navbar.Link href="/navbars">
+            Contact
+          </Navbar.Link>
+        </Navbar.Collapse>
+      </Navbar>
+      <div className="flex justify-between">
+      <Link href="#">
+        <img src="/sampleLogo.jpg" className="h-12 w-32 object-cover rounded-lg"/>
+      </Link>
+
+      {/* <div className="flex">
+        <button className="text-white bg-blue-500 h-12 px-3 rounded-lg hover:text-red-400 hover:bg-gray-400 ">
+          お問い合わせ
+        </button>
+
+        <nav>
+
+          <section className="lg:hidden">
+
+            <div 
+              className={`${ openMenu? "hidden" : "block" } p-2`}
+              onClick={() => setOpenMenu(true)}
+            >
+              <button className='animate-pulse hover:text-red-400 hover:bg-gray-400 border border-transparent hover:border-red-400 rounded-lg'>
+                <RxHamburgerMenu className="h-10 w-10"/>
+              </button>
+            </div>
+
+            <div 
+              className={`${ openMenu? "block" : "hidden" } p-2`}
+              onClick={() => setOpenMenu(false)}
+            >
+              <div className="bg-gray-200 ">
+                <button className='animate-pulse hover:text-red-400 border border-transparent hover:bg-gray-400  hover:border-red-400 rounded-lg'>
+                  <VscClose className="h-10 w-10"/>
+                </button>
+                <ul className="absolute bg-gray-200">
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>Strength</li>
+                  <li>Creators</li>
+                </ul>
+              </div>
+            </div>
+
   
-return (
-  <header>
-    <div className={`navbar bg-base-200 px-16 fixed z-50 ${ scrollDirection === 'down' ? "-top-24" : "top-0"} transition-all duration-500`}>
 
-      <div className="flex-1">
-        <Link href="#" className="btn btn-ghost normal-case text-xl">Company </Link>
+          </section>
+
+        </nav>
+
+      </div> */}
       </div>
-
-      <div className="navbar-end">
-        <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-          </label>
-          <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li><Link href="#">Homepage</Link></li>
-            <li><Link href="#">Portfolio</Link></li>
-            <li><Link href="#">About</Link></li>
-          </ul>
-        </div>
-
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-        <li><Link href="#">Item 1</Link></li>
-        <li><Link href="#">Portfolio</Link></li>
-        <li><Link href="#">Item 3</Link></li>
-      </ul>
-        </div>
-      </div>
-
-    </div>
-  </header>
-)
+    </header>
+  )
 }
 
-export default Header;
+export default Header

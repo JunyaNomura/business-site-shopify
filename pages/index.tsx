@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header2 from './components/Header2'
+import Header from './components/Header'
 import Faq from './components/Faq'
 import Flow from './components/Flow'
 import Footer from './components/Footer'
@@ -20,7 +20,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header2 />
       <main className="max-w-5xl mx-auto px-2 pt-24">
       <a href="https://n-works.link/shopify" className="flex items-center pl-2 text-2xl font-bold hover:underline" target="_blank">
           参考のウェブサイト 
@@ -35,7 +34,7 @@ export default function Home() {
         <Faq />
         <Flow />
       </main>
-      <Footer />
+
     </>
   )
 }
