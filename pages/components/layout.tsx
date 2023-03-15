@@ -1,17 +1,15 @@
-import Header from './Header';
 import Footer from './Footer';
 import type { ReactNode, FC } from 'react';
-import NewNewHeader from './NewNewHeader';
+import Header from './Header';
 
 type Props = {
   children: ReactNode
 }
 
-const Layout: FC <Props> = ({ children }) => {
+const Layout: FC<Props> = ({ children }) => {
   return (
     <>
-      {/* <Header /> */}
-      <NewNewHeader />
+      <Header />
       <main>{ children }</main>
       <Footer />
     </>

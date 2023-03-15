@@ -22,10 +22,20 @@ module.exports = {
           'from': { opacity: 0, transform: 'translateY(-100px)' },
           'to': { opacity: 1, transform: 'translateY(0)' },
         },
+        fromRightSide: {
+          'from': { opacity: 0, transform: 'translateX(100px)' },
+          'to': { opacity: 1, transform: 'translateX(0)' },
+        },
+        fromLeftSide: {
+          'from': { opacity: 1, transform: 'translateX(0)' },
+          'to': { opacity: 0, transform: 'translateX(100px)' },
+        },
       },
       animation: {
         upAnime: 'upAnime 0.5s forwards',
         downAnime: 'downAnime 0.5s forwards',
+        fromRightSide: 'fromRightSide 0.7s forwards',
+        fromLeftSide: 'fromLeftSide 0.7s forwards',
       },
     },
   },

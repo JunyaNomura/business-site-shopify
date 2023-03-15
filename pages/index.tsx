@@ -1,13 +1,10 @@
 import Head from 'next/head'
-import Header from './components/Header'
 import Faq from './components/Faq'
 import Flow from './components/Flow'
-import Footer from './components/Footer'
 import Improvement from './components/Improvement'
 import Reason from './components/Reason'
 import Support from './components/Support'
 import Voice from './components/Voice'
-import SectionBasic from './subcomponents/SectionBasic'
 
 export default function Home() {
 
