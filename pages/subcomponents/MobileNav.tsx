@@ -4,7 +4,7 @@ import Image from 'next/image'
 import sampleLogo from '../../public/sampleLogo.jpg'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { VscClose } from 'react-icons/vsc'
-import links from '../links';
+import links from './links';
 
 const HiddenMenu: FC = () => {
   return (
@@ -12,7 +12,7 @@ const HiddenMenu: FC = () => {
       <div className="flex flex-col justify-center mb-2">
         {links.map((link) => (
           <li key={link.id}>
-            <Link href={link.url} className="flex justify-end px-8 py-2 hover:bg-gray-50 rounded-lg duration-200">
+            <Link href={link.url} className="flex justify-end px-8 py-2 hover:bg-gray-50 duration-200">
               {link.name}
             </Link>
           </li>
@@ -29,7 +29,7 @@ const MobileNav: FC = () => {
     <>
       {/* mobile screen  */}
       <ul className="lg:hidden">
-        <div className="py-4 px-6 flex items-center justify-between">
+        <div className="py-3 px-6 flex items-center justify-between">
           {/* left block */}
           <Link href="#">
             <Image src={sampleLogo} alt="campany logo" className="w-24 h-10 object-cover"/>
@@ -39,7 +39,7 @@ const MobileNav: FC = () => {
             <div className="flex items-center justify-between">
               <li>
                 <Link href="#">
-                  <button type="button" className="mr-6 p-2 bg-blue-600 text-white hover:bg-blue-400 duration-200 rounded-xl">Contact</button>
+                  <button type="button" className="mr-6 p-3 w-32 bg-blue-600 text-white hover:bg-blue-400 duration-200 rounded-3xl">お問い合わせ</button>
                 </Link>
               </li>
 
