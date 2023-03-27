@@ -13,6 +13,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        notosans: ['Noto Sans JP'],
+      },
       keyframes: {
         upAnime: {
           'from': { opacity: 1, transform: 'translateY(0)' },

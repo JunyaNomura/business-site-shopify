@@ -1,5 +1,11 @@
 import heroSvg from "../public/hero.svg"
 import Image from 'next/image'
+// import { Zen_Kaku_Gothic_Antique } from '@next/font/google'
+
+// const kakugothic = Zen_Kaku_Gothic_Antique({
+//    weight: '300',
+//    preload: false,
+// })
 
 const Hero = () => {
   return (
