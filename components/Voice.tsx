@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
 import Image from 'next/image'
-import Card from '../subcomponents/Card';
-import SectionBasic from '../subcomponents/SectionBasic';
+import Card from './subcomponents/Card';
+import SectionBasic from './subcomponents/SectionBasic';
 import { CardInfo } from '@/types/types';
 
 const customers: CardInfo[] = [

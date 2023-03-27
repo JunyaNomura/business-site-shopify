@@ -1,6 +1,6 @@
 import React from 'react'
-import Collapse from '../subcomponents/Collapse'
-import SectionBasic from '../subcomponents/SectionBasic'
+import Collapse from './subcomponents/Collapse'
+import SectionBasic from './subcomponents/SectionBasic'
 import { CollapseInfo } from '@/types/types'
 
 const faqs: CollapseInfo[] = [

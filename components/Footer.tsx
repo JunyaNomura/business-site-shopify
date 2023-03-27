@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import links from '../subcomponents/links'
+import links from './subcomponents/links'
 import { SiUdemy, SiTwitter, SiInstagram, SiYoutube, SiFacebook} from 'react-icons/si'
 
 const Footer = () => {

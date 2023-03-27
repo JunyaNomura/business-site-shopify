@@ -1,6 +1,6 @@
 import { CardInfo } from '@/types/types'
 import { FC } from 'react'
-import Card from '../subcomponents/Card'
+import Card from './subcomponents/Card'
 
 const flowItems: CardInfo[] = [
   {

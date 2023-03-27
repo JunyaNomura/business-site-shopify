@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { CardInfo } from '@/types/types';
-import Card from '../subcomponents/Card';
-import SectionBasic from '../subcomponents/SectionBasic';
+import Card from './subcomponents/Card';
+import SectionBasic from './subcomponents/SectionBasic';
 
 const supportItems: CardInfo[] = [
   {

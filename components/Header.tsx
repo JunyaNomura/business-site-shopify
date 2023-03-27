@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import MobileNav from '../subcomponents/MobileNav'
-import DesktopNav from '../subcomponents/DesktopNav'
-import useScrollDirection from '../animateFuncs/useScrollDirection'
+import MobileNav from './subcomponents/MobileNav'
+import DesktopNav from './subcomponents/DesktopNav'
+import useScrollDirection from './animateFuncs/useScrollDirection'
 
 
 const Header: FC = () => {
