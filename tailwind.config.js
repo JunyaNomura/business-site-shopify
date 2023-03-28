@@ -1,3 +1,5 @@
+const { transparent } = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -15,6 +17,7 @@ module.exports = {
     extend: {
       fontFamily: {
         notosans: ['Noto Sans JP'],
+        roboto: ['Roboto']
       },
       keyframes: {
         upAnime: {
