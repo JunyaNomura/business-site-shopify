@@ -12,14 +12,14 @@ const Hero = () => {
   return (
     <div className="mx-auto px-4 text-center tracking-widest leading-relaxed font-sans font-light text-gray-800">
       {/* hero title */}
-        <h2 className="w-auto my-8 uppercase text-3xl">
+        <h2 className="w-auto mt-8 uppercase text-3xl">
           create our future
           <br/>
-          <span className="">
+          <span>
             with technology
           </span>
         </h2>   
-        <p>
+        <p className="mb-8">
          創造的な未来をテクノロジーと共に。
         </p>
       {/* hero image */}
