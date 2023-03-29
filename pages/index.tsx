@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/Hero'
+import Services from '../components/Services'
 import Faq from '../components/Faq'
 import Flow from '../components/Flow'
 import Improvement from '../components/Improvement'
@@ -21,6 +22,7 @@ export default function Home() {
 
       <main className="max-w-5xl mx-auto px-2 pt-24">
         <Hero />
+        <Services />
         <Reason />
         <Support />
         <Improvement />
