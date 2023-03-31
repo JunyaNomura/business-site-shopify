@@ -27,8 +27,8 @@ const DesktopNav: FC = () => {
          </div>
          {/* right block */}
            <li>
-             <Link href="#">
-               <button type="button" className="p-3 w-32 bg-blue-600 text-white hover:bg-blue-400 duration-200 rounded-3xl">お問い合わせ</button>
+             <Link href="#" className="inline-block mr-6 p-3 w-32 text-center bg-blue-600 text-white hover:bg-blue-400 duration-200 rounded-3xl">
+              お問い合わせ
              </Link>
            </li>
              

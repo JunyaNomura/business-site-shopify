@@ -28,10 +28,8 @@ const Hero = () => {
           <br/>
           Webテクノロジーとビジネスの専門家集団である私たちが、総合的なユーザー体験をプロデュースします。
         </p>
-        <Link href="../about">
-          <button className="w-56 p-3 bg-emerald-500 hover:bg-emerald-300 text-white rounded-3xl duration-300">
+        <Link href="../about" className="inline-block w-56 p-3 bg-emerald-500 hover:bg-emerald-300 text-white rounded-3xl duration-300">
             私たちについて
-          </button>
         </Link>
       </section>
     </div>
