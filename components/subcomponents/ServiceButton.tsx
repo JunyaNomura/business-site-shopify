@@ -8,7 +8,7 @@ const ServiceButton = () => {
      <Link href="#">
        <div className="h-20 flex justify-between items-center">
         <div className="z-10">
-          <p className="font-bold text-xl before:relative before:inline-block before:align-middle before:w-6  before:mx-2 before:border-b-[3px] before:border-emerald-300">業務効率化ツール開発</p>
+          <p className="font-bold text-xl before:relative before:inline-block before:align-middle before:w-6  before:mx-2 before:border-b-[3px] before:border-emerald-500">業務効率化ツール開発</p>
           <p className="text-sm">E-commerce</p>
         </div>
         <div className="relative">
