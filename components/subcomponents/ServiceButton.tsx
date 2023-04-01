@@ -4,15 +4,17 @@ import ec from '../../public/ec.svg'
 import { RiArrowRightSLine } from 'react-icons/ri'
 const ServiceButton = () => {
   return (
-    <div className="bg-neutral-100">
+    <div className="relative bg-neutral-100 hover:bg-neutral-500 hover:text-white duration-300 md:w-1/3">
      <Link href="#">
-       <div className="flex items-center">
-        <div>
-          <p className="font-bold text-xl">ECサイト構築</p>
+       <div className="h-20 flex justify-between items-center">
+        <div className="z-10">
+          <p className="font-bold text-xl before:relative before:inline-block before:align-middle before:w-6  before:mx-2 before:border-b-[3px] before:border-emerald-300">業務効率化ツール開発</p>
           <p className="text-sm">E-commerce</p>
         </div>
-        <Image src={ec} alt="ec icon"/>
-        <RiArrowRightSLine className="w-16 h-16"/>
+        <div className="relative">
+          <Image src={ec} alt="ec icon" className="w-14 h-14 absolute right-12"/>
+          <RiArrowRightSLine className="w-14 h-14"/>
+        </div>
        </div>
     </Link>
     </div>
