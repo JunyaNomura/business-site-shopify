@@ -24,3 +24,12 @@ export interface CollapseInfo {
   question:  string
   answer: string
 }
+
+
+export interface ServiceBtnInfo {
+  id: number
+  title: string
+  engtitle: string
+  iconSrc: string
+  url: string
+}

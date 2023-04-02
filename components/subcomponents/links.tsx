@@ -2,23 +2,18 @@ const links = [
   {
     id: 1,
     url: "#",
-    name: "About us"
+    name: "ABOUT US"
   },
   {
     id: 2,
     url: "#",
-    name: "Services"
+    name: "SERVICES"
   },
   {
     id: 3,
     url: "#",
-    name: "Strength"
+    name: "CONTACT US"
   },
-  {
-    id: 4,
-    url: "#",
-    name: "Creators"
-  }
 ]
 
 export default links

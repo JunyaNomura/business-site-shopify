@@ -17,13 +17,13 @@ const Hero = () => {
       {/* hero image */}
       <Image src={heroSvg} alt="hero image" className="mx-auto lg:max-w-3xl"/> 
       {/* about */}
-      <section className="my-12">
-        <p className="text-xl mb-6">
+      <section className="mt-24">
+        <p className="text-xl mb-12">
           Companyは最先端技術を駆使して
           <br/>
           リッチなWeb体験をプロデュースします。
         </p>
-        <p className="mb-8">
+        <p className="mb-12">
           Web。そこは、顧客と商品が出会い、関係を構築していく場所。
           <br/>
           Webテクノロジーとビジネスの専門家集団である私たちが、総合的なユーザー体験をプロデュースします。
