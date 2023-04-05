@@ -4,7 +4,7 @@ import { SiUdemy, SiTwitter, SiInstagram, SiYoutube, SiFacebook} from 'react-ico
 
 const Footer = () => {
   return (
-    <footer className="mt-auto footer footer-center py-10 px-6 bg-gray-300 text-base-content rounded">
+    <footer className="mt-auto footer footer-center py-10 px-6 bg-neutral-300 text-base-content rounded">
       {/* site menu */}
       <ul className="lg:grid lg:grid-flow-col lg:gap-2">
         <li className="">
