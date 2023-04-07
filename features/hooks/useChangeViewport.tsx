@@ -10,7 +10,7 @@ const changeViewport = () => {
        : setViewport("width=360");         
     }
     window.addEventListener('resize', switchViewport)
-    // console.log("useeffectが活動")
+    // console.log(viewport)
   }, [viewport])
   return viewport;
 }
