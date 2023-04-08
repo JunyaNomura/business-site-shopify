@@ -1,5 +1,8 @@
 import Head from "next/head"
 import changeViewport from "../features/hooks/useChangeViewport"
+import { HeadSeoInfo } from "../types/types"
+
+
 const HeadSeo = ({
   title,
   description,
@@ -8,7 +11,7 @@ const HeadSeo = ({
   ogTwitterImage,
   ogType,
   children,
-}) => {
+}: HeadSeoInfo) => {
   return (
     <Head>
       {/* basic metadata */}
@@ -38,7 +41,6 @@ const HeadSeo = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogTwitterImage} />
-
       {children}
     </Head>
   )

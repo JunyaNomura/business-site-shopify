@@ -25,11 +25,20 @@ export interface CollapseInfo {
   answer: string
 }
 
-
 export interface ServiceBtnInfo {
   id: number
   title: string
   engtitle: string
   iconSrc: string
   url: string
+}
+
+export interface HeadSeoInfo {
+  title: string
+  description: string
+  url: string
+  ogImageUrl: string
+  ogTwitterImage: string
+  ogType: string
+  children?: any
 }
