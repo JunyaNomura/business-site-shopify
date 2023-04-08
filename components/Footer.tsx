@@ -8,7 +8,7 @@ const Footer = () => {
       {/* site menu */}
       <ul className="lg:grid lg:grid-flow-col lg:gap-2">
         <li className="">
-          <Link href="#" className="py-2 px-4 hover:bg-white rounded-lg duration-300">
+          <Link href="/" className="py-2 px-4 hover:bg-white rounded-lg duration-300">
             TOP
           </Link>
         </li>

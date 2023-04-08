@@ -11,7 +11,7 @@ const DesktopNav: FC = () => {
        <ul className="hidden lg:block lg:max-w-6xl lg:mx-auto">
        <div className="py-3 px-6 flex items-center justify-between">
          {/* left block */}
-         <Link href="#">
+         <Link href="/">
            <Image src={sampleLogo} alt="campany logo" className="w-24 h-10 object-cover"/>
          </Link>
          {/* center block */}
@@ -27,7 +27,7 @@ const DesktopNav: FC = () => {
          </div>
          {/* right block */}
            <li>
-             <Link href="#" className="inline-block p-3 w-32 text-center bg-blue-600 text-white hover:bg-blue-400 duration-200 rounded-3xl">
+             <Link href="../../contact" className="inline-block p-3 w-32 text-center bg-blue-600 text-white hover:bg-blue-400 duration-200 rounded-3xl">
               お問い合わせ
              </Link>
            </li>
