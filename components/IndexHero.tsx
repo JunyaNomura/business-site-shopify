@@ -2,7 +2,7 @@ import heroSvg from "../public/hero.svg"
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Hero = () => {
+const IndexHero = () => {
   return (
     <div className="mx-auto px-4 text-center tracking-widest leading-relaxed font-sans font-light text-gray-800">
       {/* hero title */}
@@ -36,4 +36,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default IndexHero
