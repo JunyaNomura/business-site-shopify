@@ -25,27 +25,27 @@ const Footer = () => {
         <ul className="grid grid-flow-col gap-6">
           <li>
             <Link href="#">
-              < SiTwitter className="w-6 h-6 hover:text-gray-400"/>
+              < SiTwitter className="w-6 h-6 hover:text-gray-400 duration-300"/>
             </Link> 
           </li>
           <li>
             <Link href="#">
-              < SiInstagram className="w-6 h-6 hover:text-gray-400"/>
+              < SiInstagram className="w-6 h-6 hover:text-gray-400 duration-300"/>
             </Link> 
           </li>
           <li>
             <Link href="#">
-              < SiFacebook className="w-6 h-6 hover:text-gray-400"/>
+              < SiFacebook className="w-6 h-6 hover:text-gray-400 duration-300"/>
             </Link> 
           </li>
           <li>
             <Link href="#">
-              < SiYoutube className="w-6 h-6 hover:text-gray-400"/>
+              < SiYoutube className="w-6 h-6 hover:text-gray-400 duration-300"/>
             </Link> 
           </li>
           <li>
             <Link href="#">
-              < SiUdemy className="w-6 h-6 hover:text-gray-400"/>
+              < SiUdemy className="w-6 h-6 hover:text-gray-400 duration-300"/>
             </Link> 
           </li>
         </ul>
