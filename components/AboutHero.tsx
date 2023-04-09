@@ -6,26 +6,37 @@ const AboutHero = () => {
     <div className="mx-auto px-4 text-center tracking-widest leading-relaxed font-sans font-light text-gray-800">
       {/* hero title */}
         <h2 className="w-auto mt-8 uppercase text-3xl">
-          create our future
-          <br/>
-            with technology
+          about us
         </h2>   
           <p className="text-base mb-8">
-          創造的な未来をテクノロジーと共に。
+         私たちについて
           </p>
       {/* hero image */}
       <Image src={aboutSvg} alt="hero image" className="mx-auto lg:max-w-3xl"/> 
       {/* about */}
       <section className="mt-24">
-        <p className="text-xl mb-12">
-          Companyは最先端技術を駆使して
-          <br/>
-          リッチなWeb体験をプロデュースします。
-        </p>
         <p className="mb-12">
-          Web。そこは、顧客と商品が出会い、関係を構築していく場所。
+          Webサイト・LP・SNS・ECなど、
           <br/>
-          Webテクノロジーとビジネスの専門家集団である私たちが、総合的なユーザー体験をプロデュースします。
+          Web戦略って何からやって良いのかわからない。
+          <br/><br/>
+          やりたいイメージはあるけど技術に詳しくないから、
+          <br/>
+          何をどう発注すれば良いのかわからない。
+          <br/>
+          そんな風に感じた経験はありませんか？
+          <br/><br/>
+          企業にとってのWebとは顧客とのタッチポイントであり、
+          <br/>
+          そこでのユーザー体験がブランディングに直結します。
+          <br/><br/>
+          そして、その設計のためには、
+          <br/>
+          マーケティングとエンジニアリング、両方の視点を持つことが不可欠です。
+          <br/><br/>
+          私たち「My Company」が
+          <br/>
+          Webを中心にした問題解決に取り組みます。
         </p>
       </section>
     </div>
