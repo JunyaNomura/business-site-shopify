@@ -1,3 +1,5 @@
+import Contact from '@/components/Contact'
+import Services from '@/components/Services'
 import HeadSeo from '../components/HeadSeo'
 
 export default function Home() {
@@ -12,8 +14,12 @@ export default function Home() {
         ogTwitterImage={"image src"}
         ogType={"article"}
       />   
-      <main className="max-w-5xl mx-auto px-2 pt-24">
-       This is about EC service page
+      <main>
+        <div className="max-w-5xl mx-auto px-2 pt-24">
+          This is about EC service page
+          <Services />
+        </div>
+        <Contact />
       </main>
 
     </>

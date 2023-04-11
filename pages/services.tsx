@@ -3,8 +3,8 @@ import Contact from '@/components/Contact'
 import ServiceHero from '@/components/ServiceHero'
 import Solutions from '@/components/Solutions'
 import HeadSeo from '../components/HeadSeo'
-export default function Home() {
 
+export default function Home() {
   return (
     <>
       <HeadSeo 

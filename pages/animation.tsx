@@ -1,4 +1,6 @@
 import HeadSeo from '../components/HeadSeo'
+import Services from '../components/Services'
+import Contact from '../components/Contact'
 
 export default function Home() {
 
@@ -12,8 +14,12 @@ export default function Home() {
         ogTwitterImage={"image src"}
         ogType={"article"}
       />   
-      <main className="max-w-5xl mx-auto px-2 pt-24">
-       This is animation page
+      <main>
+        <div className="max-w-5xl mx-auto px-2 pt-24">
+          This is animation page
+          <Services />
+        </div>
+        <Contact />
       </main>
 
     </>
