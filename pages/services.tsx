@@ -1,6 +1,7 @@
+import AllServices from '@/components/AllServices'
 import ServiceHero from '@/components/ServiceHero'
+import Solutions from '@/components/Solutions'
 import HeadSeo from '../components/HeadSeo'
-
 export default function Home() {
 
   return (
@@ -15,8 +16,9 @@ export default function Home() {
       />   
       <main className="max-w-5xl mx-auto px-2 pt-24">
        <ServiceHero />
+       <AllServices />
+       <Solutions />
       </main>
-
     </>
   )
 }

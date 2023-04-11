@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import links from './subcomponents/links'
+import PageLinks from './subcomponents/PageLinks'
 import { SiUdemy, SiTwitter, SiInstagram, SiYoutube, SiFacebook} from 'react-icons/si'
 
 const Footer = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
             TOP
           </Link>
         </li>
-        {links.map((link) => (
-          <li key={link.id}>
-            <Link href={link.url} className="py-2 px-3 hover:bg-white rounded-lg duration-300">
-              {link.name}
+        {PageLinks.map((pageLink) => (
+          <li key={pageLink.id}>
+            <Link href={pageLink.url} className="py-2 px-3 hover:bg-white rounded-lg duration-300">
+              {pageLink.name}
             </Link> 
           </li>
         ))}

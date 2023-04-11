@@ -1,4 +1,4 @@
-const links = [
+const PageLinks = [
   {
     id: 1,
     url: "../../about",
@@ -6,7 +6,7 @@ const links = [
   },
   {
     id: 2,
-    url: "../../service",
+    url: "../../services",
     name: "SERVICES"
   },
   {
@@ -16,4 +16,4 @@ const links = [
   },
 ]
 
-export default links
+export default PageLinks

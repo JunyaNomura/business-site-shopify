@@ -2,7 +2,7 @@ import { FC } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import sampleLogo from '../../public/sampleLogo.jpg'
-import links from './links'
+import PageLinks from './PageLinks'
 
 const DesktopNav: FC = () => {
   return (
@@ -16,10 +16,10 @@ const DesktopNav: FC = () => {
          </Link>
          {/* center block */}
          <div className="flex w-1/3 justify-between">
-           {links.map((link) => (
-             <li key={link.id}>
-               <Link href={link.url} className="p-2 rounded-lg hover:bg-white duration-300">
-                 {link.name}
+           {PageLinks.map((pageLink) => (
+             <li key={pageLink.id}>
+               <Link href={pageLink.url} className="p-2 rounded-lg hover:bg-white duration-300">
+                 {pageLink.name}
                </Link>
              </li>
            ))}

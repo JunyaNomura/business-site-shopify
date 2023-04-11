@@ -42,3 +42,4 @@ export interface HeadSeoInfo {
   ogType: string
   children?: any
 }
+

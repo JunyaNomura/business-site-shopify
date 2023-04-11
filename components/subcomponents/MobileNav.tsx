@@ -4,16 +4,16 @@ import Image from 'next/image'
 import sampleLogo from '../../public/sampleLogo.jpg'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { VscClose } from 'react-icons/vsc'
-import links from './links';
+import PageLinks from './PageLinks';
 
 const HiddenMenu: FC = () => {
   return (
     <div className="absolute w-full bg-gray-300/80">
       <div className="flex flex-col justify-center mb-2">
-        {links.map((link) => (
-          <li key={link.id}>
-            <Link href={link.url} className="flex justify-end px-8 py-2 hover:bg-gray-50 duration-200">
-              {link.name}
+        {PageLinks.map((pageLink) => (
+          <li key={pageLink.id}>
+            <Link href={pageLink.url} className="flex justify-end px-8 py-2 hover:bg-gray-50 duration-200">
+              {pageLink.name}
             </Link>
           </li>
         ))}
