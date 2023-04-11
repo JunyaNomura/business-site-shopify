@@ -24,9 +24,6 @@ export default function Home() {
         </div>
         <Contact />
       </main>
-
-      
-
     </>
   )
 }
