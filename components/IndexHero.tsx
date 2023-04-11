@@ -15,7 +15,7 @@ const IndexHero = () => {
           創造的な未来をテクノロジーと共に。
           </p>
       {/* hero image */}
-      <Image src={heroSvg} alt="hero image" className="mx-auto lg:max-w-3xl"/> 
+      <Image src={heroSvg} alt="hero image" className="mx-auto lg:max-w-3xl" /> 
       {/* about */}
       <section className="mt-24">
         <p className="text-xl mb-12">

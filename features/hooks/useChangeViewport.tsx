@@ -10,7 +10,7 @@ const changeViewport = () => {
        : setViewport("width=360");         
     }
     window.addEventListener('resize', switchViewport)
-    console.log(viewport)
+    // console.log(viewport)
   }, [viewport])
   return viewport;
 }

@@ -22,7 +22,7 @@ const Greeting  = () => {
 
         {/* card */}
         <div className="bg-emerald-50 w-80 sm:w-[560px] mx-auto py-6">
-          <Image src={profile} alt="Company's representative photo" width={750} height={750} priority className="object-cover w-52 h-52 mx-auto rounded-full brightness-[1.1] saturate-[1.30]"/>
+          <Image src={profile} alt="Company's representative photo" width={500} height={500} className="object-cover w-52 h-52 mx-auto rounded-full brightness-[1.1] saturate-[1.30]"/>
           {/* name */}
           <p className="capitalize py-3">
             asuka seki
