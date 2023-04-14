@@ -1,13 +1,13 @@
 import { ServiceBtnInfo } from '@/types/types'
-import ecIcon from "../../public/ec.svg"
-import webIcon from "../../public/website.svg"
-import cmsIcon from "../../public/cms.svg"
-import photoIcon from "../../public/photo.svg"
-import moviesIcon from "../../public/movies.svg"
-import animationIcon from "../../public/animation.svg"
-import threeDIcon from "../../public/threeD.svg"
-import systemDevIcon from "../../public/systemDev.svg"
-import consultingIcon from "../../public/consulting.svg"
+import ecIcon from "../../public/serviceIcons/ec.svg"
+import webIcon from "../../public/serviceIcons/website.svg"
+import cmsIcon from "../../public/serviceIcons/cms.svg"
+import photoIcon from "../../public/serviceIcons/photo.svg"
+import moviesIcon from "../../public/serviceIcons/movies.svg"
+import animationIcon from "../../public/serviceIcons/animation.svg"
+import threeDIcon from "../../public/serviceIcons/threeD.svg"
+import systemDevIcon from "../../public/serviceIcons/systemDev.svg"
+import consultingIcon from "../../public/serviceIcons/consulting.svg"
 
 const ServiceButtons: ServiceBtnInfo[] = [
   { 
