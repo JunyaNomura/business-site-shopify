@@ -15,7 +15,7 @@ const ServiceButton: FC<ServiceBtnInfo> = ({title, engtitle, iconSrc, url} :Serv
             <p className="text-sm pl-10">{engtitle}</p>
           </div>
           <div className="relative">
-            <Image src={iconSrc} width={56} height={56} alt={engtitle} className="absolute right-12 "/>
+            <Image src={iconSrc} width={56} height={56} alt={engtitle} className="absolute right-12 opacity-20"/>
             <RiArrowRightSLine className="w-14 h-14"/>
           </div>
         </div>

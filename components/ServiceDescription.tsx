@@ -19,12 +19,14 @@ const ServiceDescription = () => {
       </div>
 
       {/* ServiceDescription */}
-      <section className="mt-24">
-        <div>
-          {/* props.themeImage */}
-          <Image src={ecImage} alt="ec image" className=""/>
-          {/* props.themeIconImage */}
-          <Image src={ecIcon} alt="ec icon for decoration" className="w-8 h-8 saturate-[50] brightness-100"/>
+      <section className="mt-12">
+        <div className="flex justify-center">
+          <div className="relative">
+            {/* props.themeImage */}
+            <Image src={ecImage} alt="ec image" className="w-screen sm:max-w-[591px]"/>
+            {/* props.themeIconImage */}
+            <Image src={ecIcon} alt="ec icon for decoration" className="w-10 h-10 absolute top-0.5 left-0.5 brightness-150"/>
+          </div>
         </div>
       </section>
 
