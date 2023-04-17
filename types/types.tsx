@@ -43,3 +43,11 @@ export interface HeadSeoInfo {
   children?: any
 }
 
+export interface PriceInfo {
+  enTitle: string
+  jaTitle: string
+  color: string
+  price: number
+  description: string
+  points: string[]
+}
