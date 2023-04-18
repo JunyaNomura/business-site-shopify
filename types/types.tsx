@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+import { ReactNode } from "react";
 
 
 export interface CardInfo {
@@ -40,7 +42,19 @@ export interface HeadSeoInfo {
   ogImageUrl: string
   ogTwitterImage: string
   ogType: string
-  children?: any
+  children?: ReactNode
+}
+
+export interface MoreServiceInfo {
+  title: string
+  subTitle: string
+  themeImage: StaticImageData
+  themeIconImage: string
+  salesPoint: string
+  salesDescription: string
+  pricePlan: string
+  price?: true
+  menus: PriceInfo[]
 }
 
 export interface PriceInfo {

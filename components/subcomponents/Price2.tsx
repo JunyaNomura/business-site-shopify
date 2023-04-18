@@ -1,10 +1,10 @@
 const planTitle = "STANDARD"
-const recommendations = ["aaaaa"]
 import { PriceInfo } from '../../types/types';
 
 const Price2 = ({enTitle, jaTitle, color, price, description, points}: PriceInfo) => {
          
   return (
+    
 
     <div className={`w-full border-2 bg-${color}`}>
     {/* props:cardColor, planTitle, subTitle, */}
