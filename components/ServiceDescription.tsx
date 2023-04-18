@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Price2 from './subcomponents/Price2'
+import Price from './subcomponents/Price'
 import { MoreServiceInfo } from '../types/types'
 
 const ServiceDescription = ({
@@ -65,13 +65,9 @@ const ServiceDescription = ({
           </p>
         </div>
         {menus.map((menu) => (
-          <Price2 {...menu} />
-        ))}
-       
-
-
+          <Price {...menu} />
+        ))}      
       </section>
-
     </div>
   )
 }

@@ -8,8 +8,8 @@ import { PriceInfo } from "../types/types"
 
   
 const light: PriceInfo = {
-    enTitle: 'light',
-    jaTitle: 'ライト',
+    title: 'LIGHT',
+    subTitle: 'ライトプラン',
     color: 'blue-500',
     price: 100000,
     description: 'テンプレートを使った基本機能のみのスモールスタート',
@@ -21,9 +21,9 @@ const light: PriceInfo = {
   };
 
 const standard: PriceInfo = {
-    enTitle: 'standard',
-    jaTitle: 'スタンダード',
-    color: 'green-500',
+    title: ' STANDARD',
+    subTitle: 'スタンダードプラン',
+    color: 'emerald-500',
     price: 500000,
     description: '他社と差別化できるオリジナルデザインのECサイト',
     points: [
@@ -34,8 +34,8 @@ const standard: PriceInfo = {
   }
 
 const premium: PriceInfo = {
-    enTitle: 'premium',
-    jaTitle: 'プレミアム',
+    title: 'PREMIUM',
+    subTitle: 'プレミアムプラン',
     color: 'yellow-400',
     price: 1000000,
     description: '更新頻度が高く独自コンテンツが充実した機能性の高い大規模Webサイト',
@@ -65,7 +65,6 @@ export default function Home() {
       />   
       <main>
         <div className="max-w-5xl mx-auto px-2 pt-24">
-          This is about EC service page
           <ServiceDescription 
             title={"ECサイト構築"}
             subTitle={"E-Commerce"}

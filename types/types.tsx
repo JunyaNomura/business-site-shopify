@@ -58,8 +58,8 @@ export interface MoreServiceInfo {
 }
 
 export interface PriceInfo {
-  enTitle: string
-  jaTitle: string
+  title: string
+  subTitle?: string
   color: string
   price: number
   description: string
