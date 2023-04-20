@@ -62,6 +62,7 @@ export interface PriceInfo {
   subTitle?: string
   color: string
   price: number
+  attention?: string
   description: string
   points: string[]
 }

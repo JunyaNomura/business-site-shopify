@@ -1,7 +1,7 @@
 import { PriceInfo } from '../../types/types';
 import { AiFillCheckCircle } from 'react-icons/ai'
 
-const Price = ({title, subTitle, color, price, description, points}: PriceInfo) => {
+const Price = ({title, subTitle, color, price, attention, description, points}: PriceInfo) => {
          
   return (
     
@@ -20,7 +20,13 @@ const Price = ({title, subTitle, color, price, description, points}: PriceInfo) 
       </div>
       <div className="w-full bg-neutral-100 py-4 px-3 flex gap-2">
         <p className="w-1/3 text-center my-auto">料金</p>
-        <p className="w-2/3 text-2xl tracking-widest">¥{price.toLocaleString()}〜</p>
+        <p className="w-2/3 text-2xl tracking-widest">
+          ¥{price.toLocaleString()}〜
+          { attention
+            ? <small className="block text-xs">※{attention}</small>
+            : <span></span>
+          }
+        </p>
       </div>
       <div className="w-full bg-white py-4 px-3 flex gap-2">
         <p className="w-1/3 text-center my-auto">概要</p>
