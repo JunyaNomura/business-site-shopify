@@ -20,7 +20,7 @@ const ServiceDescription = ({
     <div className="mx-auto px-4 tracking-widest leading-relaxed font-sans font-light text-gray-800">
       {/* title */}
       <div className="my-8 w-fit mx-auto">
-        <h2 className="uppercase text-3xl font-semibold">
+        <h2 className="uppercase text-3xl text-center font-semibold">
           {title}
         </h2>
         <div className="my-1 border-b-[3px] border-b-emerald-500"></div>
