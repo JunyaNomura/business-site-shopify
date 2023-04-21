@@ -47,7 +47,7 @@ export default function Home() {
       />   
       <main>
         <div className="max-w-5xl mx-auto px-2 pt-24">
-        <ServiceDescription 
+          <ServiceDescription 
             title={"アニメーション動画"}
             subTitle={"Animation Movies"}
             themeImage={animationImage}
