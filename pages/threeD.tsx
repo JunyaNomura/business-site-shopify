@@ -7,6 +7,7 @@ import threeDImage from "../public/serviceImages/threeDImage.jpg"
 import threeDIcon from "../public/serviceIcons/threeD.svg"
 
 const modeling: PriceInfo = {
+  id: 1,
   title: '商品の3Dモデリング',
   color: 'emerald-500',
   price: 50000,
@@ -19,6 +20,7 @@ const modeling: PriceInfo = {
 };
 
 const website3D: PriceInfo = {
+  id: 2,
   title: ' 3DWebサイト制作',
   color: 'emerald-500',
   price: 100000,

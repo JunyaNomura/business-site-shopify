@@ -7,6 +7,7 @@ import photoIcon from "../public/serviceIcons/photo.svg"
 import { PriceInfo } from "../types/types"
 
 const businessTrip: PriceInfo = {
+  id: 1,
   title: '出張撮影',
   color: 'emerald-500',
   price: 30000,
@@ -20,6 +21,7 @@ const businessTrip: PriceInfo = {
 };
 
 const studio: PriceInfo = {
+  id: 2,
   title: 'スタジオ撮影',
   color: 'emerald-500',
   price: 100000,

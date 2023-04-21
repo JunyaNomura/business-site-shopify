@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Price from './subcomponents/Price'
+import MoviePrice from './subcomponents/MoviePrice'
 import { MoreServiceInfo } from '../types/types'
 
 const ServiceDescription = ({
@@ -12,6 +13,7 @@ const ServiceDescription = ({
   pricePlan,
   price,
   menus,
+  movieMenus,
 }: MoreServiceInfo,
   
 ) => {
@@ -64,9 +66,24 @@ const ServiceDescription = ({
             }
           </p>
         </div>
-        {menus.map((menu) => (
-          <Price {...menu} />
-        ))}      
+        {menus
+          ? menus.map((menu) => (
+          <Price {...menu} key={menu.id} />
+          ))
+          : <span></span>
+        }
+        {/* 例外の分岐: true === 動画撮影・編集ページ */}
+        {movieMenus
+          ? movieMenus.map((movieMenu) => (
+              <MoviePrice {...movieMenu} />
+            ))
+          : <span></span>
+        }
+        {/* 例外の分岐: true === 業務効率化ツール開発ページ */}
+        {!(menus || movieMenus)
+          ? <p className="mt-8">ご希望の業務内容により異なるため、詳細はお問い合わせ下さい。</p>
+          : <span></span>
+        }
       </section>
     </div>
   )

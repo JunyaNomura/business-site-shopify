@@ -7,6 +7,7 @@ import websiteIcon from '../public/serviceIcons/website.svg'
 import { PriceInfo } from "../types/types"
 
 const light: PriceInfo = {
+  id: 1,
   title: 'LIGHT',
   subTitle: 'ライトプラン',
   color: 'blue-500',
@@ -20,6 +21,7 @@ const light: PriceInfo = {
 };
 
 const standard: PriceInfo = {
+  id: 2,
   title: ' STANDARD',
   subTitle: 'スタンダードプラン',
   color: 'emerald-500',
@@ -33,6 +35,7 @@ const standard: PriceInfo = {
 }
 
 const premium: PriceInfo = {
+  id: 3,
   title: 'PREMIUM',
   subTitle: 'プレミアムプラン',
   color: 'yellow-400',

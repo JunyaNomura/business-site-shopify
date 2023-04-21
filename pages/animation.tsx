@@ -7,6 +7,7 @@ import animationImage from "../public/serviceImages/animationImage.jpg"
 import animationIcon from "../public/serviceIcons/animation.svg"
 
 const slideShow: PriceInfo = {
+  id: 1,
   title: 'スライドショー',
   color: 'emerald-500',
   price: 50000,
@@ -19,6 +20,7 @@ const slideShow: PriceInfo = {
 };
 
 const motionGraphics: PriceInfo = {
+  id: 2,
   title: 'モーショングラフィックス',
   color: 'emerald-500',
   price: 200000,

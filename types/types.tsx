@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { ReactNode } from "react";
+import { FC, ReactNode } from "react";
 
 
 export interface CardInfo {
@@ -54,10 +54,12 @@ export interface MoreServiceInfo {
   salesDescription: string
   pricePlan: string
   price?: true
-  menus: PriceInfo[]
+  menus?: PriceInfo[]
+  movieMenus? : MovieMenusInfo[]
 }
 
 export interface PriceInfo {
+  id: number
   title: string
   subTitle?: string
   color: string
@@ -65,4 +67,15 @@ export interface PriceInfo {
   attention?: string
   description: string
   points: string[]
+}
+
+export interface MovieMenusInfo {
+  title: string
+  prices: {
+    id: number
+    priceTitle: string
+    price?: number
+    content? : string
+  }[],
+  description: string
 }

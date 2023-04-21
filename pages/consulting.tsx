@@ -7,6 +7,7 @@ import consultingIcon from '../public/serviceIcons/consulting.svg'
 import { PriceInfo } from "../types/types"
 
 const spot: PriceInfo = {
+  id: 1,
   title: 'スポット契約',
   subTitle: '(時間契約)',
   color: 'blue-500',
@@ -21,6 +22,7 @@ const spot: PriceInfo = {
 };
 
 const adviser: PriceInfo = {
+  id: 2,
   title: ' 顧問契約',
   subTitle: '(アドバイザー契約)',
   color: 'emerald-500',
@@ -35,6 +37,7 @@ const adviser: PriceInfo = {
 }
 
 const project: PriceInfo = {
+  id: 3,
   title: 'プロジェクト契約',
   color: 'yellow-400',
   price: 150000,
