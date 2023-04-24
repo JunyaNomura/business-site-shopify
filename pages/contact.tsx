@@ -1,4 +1,5 @@
 import ContactHero from '@/components/ContactHero'
+import HowToContact from '@/components/HowToContact'
 import Services from '@/components/Services'
 import HeadSeo from '../components/HeadSeo'
 
@@ -16,6 +17,7 @@ export default function Home() {
       />   
       <main className="max-w-5xl mx-auto px-2 pt-24">
        <ContactHero />
+       <HowToContact />
        <Services />
       </main>
 

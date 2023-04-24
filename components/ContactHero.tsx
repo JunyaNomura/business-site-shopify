@@ -17,7 +17,8 @@ const ContactHero = () => {
       <section className="mt-24">
         <p className="mb-12">
           お見積もりは無料です。
-          <br/>EC・コーポレートサイト等Web制作、Webアプリ開発や動画撮影などお気軽にお問い合わせください。
+          <br/>EC・コーポレートサイト等Web制作、Webアプリ開発や動画撮影など
+          <br/>お気軽にお問い合わせください。
         </p>
       </section>
     </div>
